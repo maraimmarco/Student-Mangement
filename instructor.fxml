@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="instructorTableView" layoutX="43.0" layoutY="61.0" prefHeight="200.0" prefWidth="515.0">
+        <columns>
+          <TableColumn fx:id="NationalInstructorCol" prefWidth="90.0" text="National Id" />
+          <TableColumn fx:id="instructorNameCol" prefWidth="67.0" text=" Name" />
+            <TableColumn fx:id="instructorYearOfExpCol" prefWidth="109.0" text="year Of Experince" />
+            <TableColumn fx:id="instructorCirtaficateCol" minWidth="0.0" prefWidth="85.0" text="CIRTAFICATE" />
+            <TableColumn fx:id="instructorSalaryCol" prefWidth="62.0" text="Salary" />
+            <TableColumn fx:id="instrucorTrackIdCol" prefWidth="91.0" text="Track ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="updateInstructor" layoutX="435.0" layoutY="361.0" mnemonicParsing="false" text="Update" />
+      <Button fx:id="deleteInstructor" layoutX="374.0" layoutY="361.0" mnemonicParsing="false" text="Delete" />
+      <Button fx:id="homepageInstructor" layoutX="510.0" layoutY="361.0" mnemonicParsing="false" text="Home" />
+      <Button fx:id="selectInstructor" layoutX="245.0" layoutY="361.0" mnemonicParsing="false" text="get Info" />
+      <Button fx:id="insterInstructor" layoutX="314.0" layoutY="361.0" mnemonicParsing="false" text="Insert" />
+      <Text layoutX="249.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructor" textAlignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="2.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="National Id" />
+      <TextField fx:id="NationalIdInstTxtField" layoutX="82.0" layoutY="261.0" prefHeight="26.0" prefWidth="102.0" />
+      <Text layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name " />
+      <TextField fx:id="instructorFirstNameField" layoutX="82.0" layoutY="297.0" prefHeight="26.0" prefWidth="102.0" />
+      <Text layoutX="217.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+      <TextField fx:id="instructorLastNameField" layoutX="293.0" layoutY="266.0" prefHeight="9.0" prefWidth="142.0" />
+      <Text fx:id="instructorCirtaficateField" layoutX="218.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cirtaficate" />
+      <TextField fx:id="instructorCirtifcateField" layoutX="293.0" layoutY="297.0" prefHeight="16.0" prefWidth="142.0" />
+      <DatePicker fx:id="instructorYOFExpField" layoutX="446.0" layoutY="302.0" prefHeight="26.0" prefWidth="129.0" />
+      <Text layoutX="457.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year Of Experince" />
+      <Text layoutX="2.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Track ID" />
+      <TextField fx:id="TrackIdTextField" layoutX="66.0" layoutY="341.0" />
+   </children>
+</Pane>
